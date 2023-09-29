@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa&display=swap");
+:root {
+  --black: #33242b;
+  --red: #ef4c57;
+  --red-orange: #fc4630;
+  --orange: #ff9317;
+  --yellow: #c4ff0d;
+  --white: #eee;
+  --main-font-size: 18px;
+  --big-font-size: 24px;
+  --small-font-size: 16px;
+  --extra-font-size: 32px;
+  --main-font-family: "Changa";
+}
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: var(--main-font-size);
+  font-family: var(--main-font-family);
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+.welcome {
+  height: 100%;
+  background-color: var(--red);
+  width: 100%;
+  color: var(--white);
+  padding: 30px;
+  font-size: var(--extra-font-size);
+  position: relative;
+  grid-row: 2;
+}
+.welcome h1 {
+  font-size: var(--big-font-size);
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+p {
+  all: inherit;
+  padding: 0 25px;
+  height: fit-content;
+}
+p span {
+  font-size: var(--extra-font-size);
+  color: var(--yellow);
+}
+.services {
+  background-color: var(--orange);
+  color: var(--yellow);
+  border-radius: 12px;
+}
+.services h1 {
+  background-color: var(--red-orange);
+  border-radius: 12px;
+  padding: 10px;
+  border: 2px solid var(--orange);
+}
+.articles {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main {
+  background-color: var(--white);
+}
